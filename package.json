@@ -1,0 +1,45 @@
+{
+  "name": "mern-boilerplate",
+  "version": "1.0.0",
+  "description": "mern boilerplate with webpack and babel",
+  "main": "server/index.js",
+  "scripts": {
+    "start:server": "node server",
+    "dev:server": "nodemon server",
+    "start:client": "webpack --mode=development",
+    "dev:client": "webpack serve --mode=development --config ./webpack.config.js --open",
+    "build": "webpack --mode=production",
+    "start:dev": "concurrently \" npm run dev:server \" npm run dev:client \""
+  },
+  "proxy": "http://localhost:8000",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/febriadj/mern-boilerplate.git"
+  },
+  "keywords": [
+    "boilerplate",
+    "mern-boilerplate"
+  ],
+  "author": "febriadji",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/febriadj/mern-boilerplate/issues"
+  },
+  "homepage": "https://github.com/febriadj/mern-boilerplate#readme",
+  "devDependencies": {
+    "eslint": "^7.30.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "nodemon": "^2.0.12"
+  },
+  "dependencies": {
+    "concurrently": "^6.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.13.3"
+  }
+}
