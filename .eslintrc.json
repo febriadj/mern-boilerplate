@@ -19,10 +19,12 @@
         "react"
     ],
     "rules": {
+        "no-console": "off",
         "semi": "off",
-        "linebreak-style": "off",
-        "brace-style": "off",
         "template-curly-spacing": "off",
-        "no-console": "off"
+        "import/no-extraneous-dependencies": "off",
+        "brace-style": "off",
+        "linebreak-style": "off",
+        "react/jsx-curly-spacing": "off"
     }
 }
