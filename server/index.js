@@ -26,5 +26,8 @@ if (process.env.MODE === 'production') {
   });
 }
 
+// MongoDB Connection
+require('./database/connection')();
+
 app.listen(port);
-console.log(`server running on port ${port}`);
+console.log(`Server running on Port ${port}`);
