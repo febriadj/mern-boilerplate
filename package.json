@@ -9,7 +9,7 @@
     "start:client": "webpack --mode=development",
     "dev:client": "webpack serve --mode=development --config ./webpack.config.js --open",
     "build": "webpack --mode=production",
-    "start:dev": "concurrently \" npm run dev:server \" npm run dev:client \""
+    "start:dev": "concurrently \"npm run dev:server\" \"npm run dev:client\""
   },
   "proxy": "http://localhost:8000",
   "repository": {
@@ -45,6 +45,7 @@
     "style-loader": "^3.1.0",
     "webpack": "^5.45.1",
     "webpack-cli": "^4.7.2",
+    "webpack-dev-middleware": "^5.0.0",
     "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
